@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Galih Arizza | My Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
     <!-- bootsrap icon  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <!-- end of bootsrap icon  -->
+
     <!-- my css  -->
     <link rel="stylesheet" href="../css/style.css" />
     <!-- end of my css  -->
+
+    <!-- aos scroll animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end of aos  -->
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -44,7 +50,7 @@
     <section class="jumbotron text-center">
       <img src="../img/1 (1).jpg" alt="Galih Arizza" width="200px" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Galih Arizza Candra Aditya DFP</h1>
-      <p class="lead">Technical Support | Frontend Developer</p>
+      <p class="lead"></p>
       <!-- wave 1-->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -66,8 +72,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A perspiciatis qui impedit eos numquam labore nobis commodi, ad obcaecati iste!</div>
-          <div class="col-md-4 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam unde, iusto est ea consequatur dolore ullam fuga porro molestiae autem sunt obcaecati animi commodi ducimus.</div>
+          <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A perspiciatis qui impedit eos numquam labore nobis commodi, ad obcaecati iste!</div>
+          <div class="col-md-4 mb-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam unde, iusto est ea consequatur dolore ullam fuga porro molestiae autem sunt obcaecati animi commodi ducimus.
+          </div>
         </div>
       </div>
       <!-- wave 2 -->
@@ -92,7 +100,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="../img/projects/video-editing.jpg" class="card-img-top" alt="Project video Editing" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -100,7 +108,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="../img/projects/ts.jpg" class="card-img-top" alt="Project Technical Support Application" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -108,7 +116,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="../img/projects/fe.jpg" class="card-img-top" alt="Project Front End Developer" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -129,6 +137,79 @@
     </section>
     <!-- end of project  -->
 
+    <!-- gallery  -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/1.jpg" alt="Gambar 1" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/2.jpg" alt="Gambar 2" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/3.jpg" alt="Gambar 3" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/4.jpg" alt="Gambar 4" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/5.jpg" alt="Gambar 5" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/6.jpg" alt="Gambar 6" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/7.jpg" alt="Gambar 7" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/8.jpg" alt="Gambar 8" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/9.jpg" alt="Gambar 9" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="/img/thumbs/10.jpg" alt="Gambar 10" class="img-fluid gallery-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- wave gallery -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#aac4ff"
+          fill-opacity="1"
+          d="M0,96L0,192L240,192L240,128L480,128L480,32L720,32L720,64L960,64L960,224L1200,224L1200,96L1440,96L1440,320L1200,320L1200,320L960,320L960,320L720,320L720,320L480,320L480,320L240,320L240,320L0,320L0,320Z"
+        ></path>
+      </svg>
+      <!-- end of wave gallery  -->
+    </section>
+    <!-- end of gallery  -->
+
     <!-- Contact  -->
     <section id="contact">
       <div class="container">
@@ -137,7 +218,7 @@
             <h2>Contact Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
           <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
               <strong>Thank you for your message!</strong> We will contact you as soon as possible.
@@ -183,6 +264,38 @@
     </footer>
     <!-- end of footer  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- aos animation script  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImg = document.querySelectorAll(".gallery-img");
+      galleryImg.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 50;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        duration: 2000, // values from 0 to 3000, with step 50ms //jika ingin dinamis duration defaultnya
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+    <!-- end of aos animation script  -->
+
+    <!-- animasi dari gasp  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
+    <script>
+      // register gsap text plugin
+      gsap.registerPlugin(TextPlugin);
+      // end of register gsap text plugin
+      gsap.to(".lead", { duration: 1.5, delay: 1.5, text: "Technical Support | Frontend Developer" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
+    <!-- end of animasi dari gasp  -->
+
     <!-- script input to googleform  -->
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwXq2JHPtVPW8ZVewjbn8G-EuEzgSQ-CMEq2totYFdiDVZMdRIoOeEd3mWqH_6pZFafRg/exec";

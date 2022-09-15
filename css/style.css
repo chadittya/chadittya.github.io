@@ -11,10 +11,23 @@
   background-color: #eef1ff;
 }
 
-#contact {
+#gallery {
   background-color: #d2daff;
+}
+
+#contact {
+  background-color: #aac4ff;
 }
 
 section {
   padding-top: 6rem;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+/* css masuklah di id gallery lelu ke class row dan semua yang ada di dalam row*/
+#gallery .row > * {
+  padding: 0;
 }
