@@ -27,7 +27,97 @@ section {
   width: 100%;
 }
 
-/* css masuklah di id gallery lelu ke class row dan semua yang ada di dalam row*/
+/* css masuklah di id gallery lalu ke class row dan semua yang ada di dalam row*/
 #gallery .row > * {
   padding: 0;
+}
+
+/* product section */
+.product-box {
+  background-color: #b1b2ff;
+  border-radius: 10px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.product-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.product-box:hover::before {
+  opacity: 0.2;
+}
+
+.product-box::after {
+  content: "PRODUCT";
+  position: absolute;
+  color: #fff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.product-box:hover::after {
+  opacity: 0.2;
+}
+
+.product-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+  text-shadow: 1px 1px 1px rgb(102, 99, 99);
+}
+
+.product-box:hover .product-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.product-detail-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 150px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.product-box:hover .product-detail-btn {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.product-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 300px;
+  transition: 0.5s;
+}
+
+.product-box:hover .product-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.4);
 }

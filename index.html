@@ -41,6 +41,9 @@
               <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -201,6 +204,42 @@
           </div>
         </div>
       </div>
+
+      <!-- 3d pop up product -->
+      <section id="products">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>Products</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="product-box m-3">
+                <h4 class="product-name">Product 1</h4>
+                <img src="/img/products/1.png" alt="product 1" class="product-img" />
+                <a href="#" class="btn btn-light product-detail-btn">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="product-box m-3">
+                <h4 class="product-name">Product 2</h4>
+                <img src="/img/products/2.png" alt="product 2" class="product-img" />
+                <a href="#" class="btn btn-light product-detail-btn">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="product-box m-3">
+                <h4 class="product-name">Product 3</h4>
+                <img src="/img/products/3.png" alt="product 3" class="product-img" />
+                <a href="#" class="btn btn-light product-detail-btn">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of 3d pop up product  -->
+
       <!-- wave gallery -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -350,5 +389,17 @@
       });
     </script>
     <!-- end of script input to googleform  -->
+
+    <!-- tilt animation -->
+    <script type="text/javascript" src="/js/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".product-box"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+      });
+      VanillaTilt.init(document.querySelectorAll(".gallery-img"));
+    </script>
+    <!-- end of tilt  -->
   </body>
 </html>
